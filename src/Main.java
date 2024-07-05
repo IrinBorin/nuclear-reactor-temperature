@@ -24,8 +24,10 @@ public class Main {
                 int valueOfPreviousNumber = listOfTemperatures.get(indexOfPreviousNumber);
                 double difference = temperature - valueOfPreviousNumber;
                 System.out.println("The difference with the previous entry is " + difference + " degrees Celsius");
+                double increaseOfTemperatureByTenPCFromTheAverage = 1.1;
+                double increaseOfTemperatureByTwentyPCFromThePrevious = 1.2;
 
-                if (temperature > averageTemperature * 1.1 && temperature > valueOfPreviousNumber * 1.2) {
+                if (temperature > averageTemperature * increaseOfTemperatureByTenPCFromTheAverage && temperature > valueOfPreviousNumber * increaseOfTemperatureByTwentyPCFromThePrevious) {
                     System.out.println("Alarm! The temperature is approaching dangerous levels!!!");
                 }
             }
