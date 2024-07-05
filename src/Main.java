@@ -25,7 +25,7 @@ public class Main {
                 double difference = temperature - valueOfPreviousNumber;
                 System.out.println("The difference with the previous entry is " + difference + " degrees Celsius");
 
-                if (temperature > averageTemperature * 0.1 && temperature > valueOfPreviousNumber * 0.2) {
+                if (temperature > averageTemperature * 1.1 && temperature > valueOfPreviousNumber * 1.2) {
                     System.out.println("Alarm! The temperature is approaching dangerous levels!!!");
                 }
             }
